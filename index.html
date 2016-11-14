@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geo Area</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="lib/jquery-3.1.0.js"></script>
+        <script src="lib/turf.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATLtaVJIm_mfdHI2eMR1uOzyQLdg0NyII&libraries=drawing"></script>
+        <script src="script/google-map.js"></script>
+    </head>
+    <body>
+    	<div id="main-view">
+            <div id="map-view"></div>   
+            <div class="button-container">
+                <button id="btn-edit" class="draw-btn">Edit</button>
+                <input id="buffer-val" placeholder="Buffer in km">
+                <button id="btn-buffer" class="draw-btn">Set Buffer</button>
+                <button id="btn-save" class="draw-btn">Save</button>
+            </div>
+            <span id="geojson-span"></span>
+        </div>
+    </body>
+</html>
